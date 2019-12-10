@@ -1,6 +1,14 @@
 body {
   text-align: center;
-  background-color: #d3d3d3;
-  font-family: sans-serif;
-  font-style: italic;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#blue {
+  background-color: #26349c;
+  color: white;
+}
+
+#white {
+  background-color: white;
+  color: #26349c;
 }
