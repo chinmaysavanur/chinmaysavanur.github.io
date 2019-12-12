@@ -5,44 +5,12 @@ body {
   margin: 0px;
 }
 
-#blue {
-  background-color: #26349c;
-  color: white;
-}
-
 #container {
-  border: 2.5px solid gray;
+  border: 2.5px solid #0B3C5D;
   background-color: #f1f1f1;
   border-radius: 10px;
   margin: 20px;
 }
-
-/*ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-li {
-  float: left;
-}
-
-li a, .dropbtn {
-  display: block;
-  padding: 14px 20px;
-  border: 1px solid black;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-}
-*/
-
-
 
 ul {
   list-style-type: none;
@@ -51,7 +19,7 @@ ul {
   top: 0;
   width: 100%;
   position: fixed;
-  background-color: #333;
+  background-color: #1D2731;
 }
 
 li {
@@ -92,7 +60,9 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
