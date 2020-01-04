@@ -43,17 +43,15 @@
       <h2>Robbinsville High School</h2>
       <h4>SEPTEMBER 2015 - JUNE 2019</h4>
       <img src="RHS Logo BW.png" style="width: 20%">
-
-      <div class="toggler" onclick="toggleText('toToggle');"> More Information
-        <div id="toToggle">
-          <p> GPA: 4.35 </p>
-          <h4> Extracurricular Activities </h4>
-          <p> AP Computer Science Teacher's Assistant </p>
-          <p> FIRST Robotics Competition Team 2590 Nemesis </p>
-          <p> FIRST Technology Challenge Team 14020 Nemesis Prime </p>
-          <p> Model United Nations </p>
-          <p> American Legion Jersey Boys State </p>
-        </div>
+      <button type="button" class="collapsible">Learn More</button>
+      <div class="collapsedcontent">
+        <p> GPA: 4.35 </p>
+        <h4> Extracurricular Activities </h4>
+        <p> AP Computer Science Teacher's Assistant </p>
+        <p> FIRST Robotics Competition Team 2590 Nemesis </p>
+        <p> FIRST Technology Challenge Team 14020 Nemesis Prime </p>
+        <p> Model United Nations </p>
+        <p> American Legion Jersey Boys State </p>
       </div>
     </div>
   </div>
@@ -95,15 +93,14 @@
       <h3>Bachelor of Science in Computer Science</h3>
       <h4>SEPTEMBER 2019 - MAY 2023</h4>
       <img src="Michigan Logo.png" style="width: 20%">
-      <div class="toggler" onclick="toggleText('toToggle');"> More Information
-        <div id="toToggle">
-          <h4> Relevant Coursework </h4>
-          <p> EECS 280 Programming and Elementary Data Structures </p>
-          <p> EECS 203 Discrete Math </p>
-          <p> EECS 183 Elementary Programming Concepts </p>
-          <p> ECON 101 Microeconomics </p>
-        </div>
-      </div>
+      <button type="button" class="collapsible">Learn More</button>
+      <div class="collapsedcontent">
+        <h4> Relevant Coursework </h4>
+        <p> EECS 280 Programming and Elementary Data Structures </p>
+        <p> EECS 203 Discrete Math </p>
+        <p> EECS 183 Elementary Programming Concepts </p>
+        <p> ECON 101 Microeconomics </p>
+    </div>
     </div>
   </div>
   <div class="container left">
@@ -119,3 +116,20 @@
 </body>
 
 </html>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
