@@ -26,6 +26,7 @@ ul {
   width: 100%;
   position: fixed;
   background-color: #1D2731;
+  z-index: 3;
 }
 
 li {
@@ -79,7 +80,7 @@ li.dropdown {
 
 /* Set a background color */
 body {
-  background-color: #474e5d;
+  background-color: #00274C;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -117,7 +118,7 @@ body {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #FF9F55;
+  border: 4px solid #D9B310;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
