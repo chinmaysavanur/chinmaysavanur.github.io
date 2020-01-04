@@ -33,8 +33,7 @@
     <p style="padding-left: 20%; padding-right: 20%; color: white"> Hi,
       I'm Chinmay! I'm a first-year student at University of Michigan working
       towards a Bachelor of Science in Computer Science. I'm from Robbinsville,
-      New Jersey. I am really interested in artificial intelligence and
-      autonomous vehicles. </p>
+      New Jersey. I am currently seeking a software internship for Summer 2020. </p>
   </div>
 
   <div class="timeline">
@@ -95,6 +94,7 @@
       <img src="Michigan Logo.png" style="width: 20%">
       <button type="button" class="collapsible">Learn More</button>
       <div class="collapsedcontent">
+        <p> GPA: 3.675 </p>
         <h4> Relevant Coursework </h4>
         <p> EECS 280 Programming and Elementary Data Structures </p>
         <p> EECS 203 Discrete Math </p>
@@ -125,10 +125,10 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
     } else {
-      content.style.display = "block";
+      content.style.maxHeight = content.scrollHeight + "px";
     }
   });
 }
