@@ -5,10 +5,6 @@ body {
   margin: 0px;
 }
 
-#section {
-  padding: 10px;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -58,7 +54,7 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #ccc;
 }
 
 .dropdown:hover .dropdown-content {
