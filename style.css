@@ -3,6 +3,15 @@ body {
   font-family: 'Poppins', sans-serif;
   padding-top: 50px;
   margin: 0px;
+  background-color: #00274C;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul {
@@ -64,11 +73,6 @@ li.dropdown {
 
 * {
   box-sizing: border-box;
-}
-
-/* Set a background color */
-body {
-  background-color: #00274C;
 }
 
 /* The actual timeline (the vertical ruler) */
