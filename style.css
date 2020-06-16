@@ -88,7 +88,7 @@ li.dropdown {
 }
 
 body, html {
-    height: 100%;
+  height: 100%;
 }
 
 /* The hero image */
@@ -101,7 +101,7 @@ body, html {
   height: 100%;
 
   /* Position and center the image to scale nicely on all screens */
-  background-position: 50% 10%;
+  background-position: top 10% right;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -111,8 +111,9 @@ body, html {
 .hero-text {
   text-align: left;
   position: absolute;
-  padding-top: 15%;
-  padding-left: 7.5%;
+  top: 45%;
+  left: 7.5%;
+  right: 7.5%;
   /*transform: translate(-50%, -50%);*/
   color: white;
 }
