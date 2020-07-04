@@ -2,6 +2,45 @@ body {
   text-align: center;
   margin: 0px;
   font-family: 'Raleway', sans-serif;
+}
+
+#home {
+  height: 100%;
+  margin: 0px;
+}
+
+#about {
+  height: 100%;
+  background-color: #141414;
+  color: white;
+  padding-top: 20px;
+  overflow:hidden;
+}
+
+#one {
+  float:left;
+  margin-right:20px;
+  padding: 10px;
+  width: 50%;
+}
+
+#two {
+  overflow:hidden;
+  padding: 10px;
+  margin:10px;
+}
+
+@media screen and (max-width: 400px) {
+   #one {
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+    border-bottom:2px solid #000;
+  }
+}
+
+#experience {
   background-color: #f1f1f1;
 }
 
@@ -93,7 +132,7 @@ body, html {
 
 /* The hero image */
 .hero-image {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("Michigan_Chinmay.jpg");
 
