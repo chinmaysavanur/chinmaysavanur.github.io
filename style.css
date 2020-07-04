@@ -14,29 +14,29 @@ body {
   background-color: #141414;
   color: white;
   padding-top: 20px;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 #one {
-  float:left;
-  margin-right:20px;
+  float: left;
+  margin-right: 20px;
   padding: 10px;
   width: 50%;
 }
 
 #two {
-  overflow:hidden;
+  overflow: hidden;
   padding: 10px;
-  margin:10px;
+  margin: 10px;
 }
 
 @media screen and (max-width: 400px) {
-   #one {
+  #one {
     float: none;
-    margin-right:0;
-    width:auto;
-    border:0;
-    border-bottom:2px solid #000;
+    margin-right: 0;
+    width: auto;
+    border: 0;
+    border-bottom: 2px solid #000;
   }
 }
 
@@ -132,10 +132,8 @@ body, html {
   /*padding-top: 50px;*/
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("Michigan_Chinmay.jpg");
-
   /* Set a specific height */
   height: 100%;
-
   /* Position and center the image to scale nicely on all screens */
   background-position: top 10% right;
   background-repeat: no-repeat;
@@ -248,19 +246,20 @@ body, html {
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-/* Place the timelime to the left */
+
+  /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
   }
 
-/* Full-width containers */
+  /* Full-width containers */
   .container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
-/* Make sure that all arrows are pointing leftwards */
+  /* Make sure that all arrows are pointing leftwards */
   .container::before {
     left: 60px;
     border: medium solid white;
@@ -268,12 +267,12 @@ body, html {
     border-color: transparent white transparent transparent;
   }
 
-/* Make sure all circles are at the same spot */
+  /* Make sure all circles are at the same spot */
   .left::after, .right::after {
     left: 15px;
   }
 
-/* Make all right containers behave like the left ones */
+  /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
   }
