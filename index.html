@@ -10,7 +10,16 @@
 </head>
 
 <body>
-  <div>
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a style="float: right" href="#contact">Contact</a>
+    <a style="float: right" href="#experience">Experience</a>
+    <a style="float: right" href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <!--<div>
     <ul>
       <li style="float: left; padding-left: 2.5%; cursor: pointer"> <a onclick="scrollToTop()">
           CHINMAY </a> </li>
@@ -24,7 +33,7 @@
         </div>
       </li>
       <ul>
-  </div>
+  </div>-->
 
   <section id="home">
     <div class="hero-image">
@@ -166,4 +175,14 @@
       window.scrollTo(0, c - c / 8);
     }
   };
+
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
 </script>
