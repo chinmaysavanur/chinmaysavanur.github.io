@@ -31,7 +31,7 @@ p {
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav .btn {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -42,13 +42,13 @@ p {
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.topnav .btn:hover {
   background-color: #ddd;
   color: black;
 }
 
 /* Add an active class to highlight the current page */
-.topnav a.active {
+.topnav .active {
   background-color: #4CAF50;
   color: white;
 }

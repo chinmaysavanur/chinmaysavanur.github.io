@@ -11,10 +11,10 @@
 
 <body>
   <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a style="float: right" href="#contact">Contact</a>
-    <a style="float: right" href="#experience">Experience</a>
-    <a style="float: right" href="#about">About</a>
+    <a class="btn active" href="#home" >Home</a>
+    <a class="btn" style="float: right" href="#contact">Contact</a>
+    <a class="btn" style="float: right" href="#experience">Experience</a>
+    <a class="btn" style="float: right" href="#about">About</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <ion-icon name="menu-outline"></ion-icon>
     </a>
@@ -185,5 +185,20 @@
     } else {
       x.className = "topnav";
     }
+  }
+
+  // Get the container element
+  var btnContainer = document.getElementById("myTopnav");
+
+  // Get all buttons with class="btn" inside the container
+  var btns = btnContainer.getElementsByClassName("btn");
+
+  // Loop through the buttons and add the active class to the current/clicked button
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
   }
 </script>
