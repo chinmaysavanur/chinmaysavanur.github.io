@@ -22,7 +22,7 @@ p {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #141414;
   overflow: hidden;
   position: fixed;
   z-index: 5;
@@ -43,14 +43,12 @@ p {
 
 /* Change the color of links on hover */
 .topnav .btn:hover {
-  background-color: #ddd;
-  color: black;
+  color: #D9B310;
 }
 
 /* Add an active class to highlight the current page */
 .topnav .active {
-  background-color: blue;
-  color: white;
+  color: #D9B310;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
