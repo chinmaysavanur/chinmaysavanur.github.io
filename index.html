@@ -15,25 +15,10 @@
     <a class="btn" href="#about">About</a>
     <a class="btn" href="#experience">Experience</a>
     <a class="btn" href="#contact">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="showNavigationItems()">
       <ion-icon name="menu-outline"></ion-icon>
     </a>
   </div>
-  <!--<div>
-    <ul>
-      <li style="float: left; padding-left: 2.5%; cursor: pointer"> <a onclick="scrollToTop()">
-          CHINMAY </a> </li>
-      <li style="padding-right: 2.5%"> <a href="mailto:csavanur@umich.edu" style="text-decoration:none"> Contact </a> </li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn"> Links </a>
-        <div class="dropdown-content">
-          <a href="Chinmay Savanur Resume.pdf"> Resume <img src="icons8-resume-80.png" width="15%" align="right" /> </a>
-          <a href="https://www.linkedin.com/in/chinmaysavanur/"> LinkedIn <img src="icons8-linkedin-50.png" width="15%" align="right" /> </a>
-          <a href="https://github.com/chinmaysavanur"> Github <img src="icons8-github-24.png" width="15%" align="right" /> </a>
-        </div>
-      </li>
-      <ul>
-  </div>-->
 
   <section id="home">
     <div class="hero-image">
@@ -152,53 +137,3 @@
 </body>
 
 </html>
-
-<script>
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-    });
-  }
-
-  const scrollToTop = () => {
-    const c = document.documentElement.scrollTop || document.body.scrollTop;
-    if (c > 0) {
-      window.requestAnimationFrame(scrollToTop);
-      window.scrollTo(0, c - c / 8);
-    }
-  };
-
-  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-
-  // Get the container element
-  var btnContainer = document.getElementById("myTopnav");
-
-  // Get all buttons with class="btn" inside the container
-  var btns = btnContainer.getElementsByClassName("btn");
-
-  // Loop through the buttons and add the active class to the current/clicked button
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
-</script>
